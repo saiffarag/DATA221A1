@@ -1,6 +1,6 @@
 def convert_seconds(total_seconds):
     if total_seconds < 0 or total_seconds >= 86400: # Validate input range (0 to 86399 seconds)
-        print("Invalid input")
+        print("Invalid input: Time cannot be negative and time cannot exceed one full day from midnight")
         return
 
     hours24 = total_seconds // 3600 # Convert total seconds into 24-hour format components
